@@ -1,0 +1,7 @@
+{
+  "name": "Dashboard Page",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
