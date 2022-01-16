@@ -1,1 +1,3 @@
 Bootstrap in Ionic Application
+
+https://github.com/bnjunge/ionic-bootstrap-demo
