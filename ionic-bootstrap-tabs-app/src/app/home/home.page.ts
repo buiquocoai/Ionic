@@ -13,7 +13,7 @@ export class HomePage {
   ngOnInit(){
     this.subJects =[
       {
-        img: 'Assets/img/English',
+        img: '../Assets/img/English.png',
         name: 'English'
       },
       {
