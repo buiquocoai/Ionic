@@ -1,0 +1,21 @@
+ion-content{
+    ion-grid{
+        ion-col{
+            display: flex;    
+            flex-direction: column;        
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            img{                
+                height: 80px;
+                display: block;                
+                border-radius:5px ;
+                justify-content: center;
+                
+                ion-label{
+
+                }
+            }
+        }
+    }
+}

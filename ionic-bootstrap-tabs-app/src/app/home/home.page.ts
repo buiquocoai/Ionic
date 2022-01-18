@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ComponentFactoryResolver } from '@angular/core';
 import { Router, NavigationExtras } from '@angular/router';
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -8,39 +7,51 @@ import { Router, NavigationExtras } from '@angular/router';
 })
 export class HomePage {
   subJects;
+  pathToFile;
   constructor(private router: Router) {}
   
   ngOnInit(){
+    this.pathToFile =""
     this.subJects =[
       {
-        img: '../Assets/img/English.png',
+        img: 'assets/English.png',
         name: 'English'
-      },
+      }
+      ,
       {
-        img: 'Assets/img/Statistics.png',
+        img: 'assets/Statistics.png',
         name: 'Statistics'
       },
       {
-        img: 'Assets/img/Mathamatics.png',
+        img: 'assets/Mathamatics.png',
         name: 'Mathamatics'
       },
       {
-        img: 'Assets/img/Physics.png',
+        img: 'assets/Physics.png',
         name: 'Physics'
       },
       {
-        img: 'Assets/img/Social Sience.png',
+        img: 'assets/Social Sience.png',
         name: 'Social Sience'
-      },
+      },  
       {
-        img: 'Assets/img/Social Sience1.png',
+        img: 'assets/Social Sience1.png',
         name: 'Social Sience1'
       },
-
+      
+      {
+        img: 'assets/Social Sience1.png',
+        name: 'Social Sience1'
+      },
+      {
+        img: 'assets/Social Sience1.png',
+        name: 'Social Sience1'
+      },
     ]
   }
    
   onClick(){
+    
     
   }
 }
