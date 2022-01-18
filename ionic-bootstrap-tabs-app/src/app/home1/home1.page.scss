@@ -1,11 +1,20 @@
 ion-content{
+    background-color: danger-contrast !important;
     ion-grid{
-        ion-col{
+        .user_div{
             display: flex;    
             flex-direction: column;        
             justify-content: center;
             align-items: center;
             text-align: center;
+            ion-icon{
+                zoom: 2.8;
+                padding: 5px;
+                &:first-child{
+                    zoom: 4;
+                    padding: 5px;
+                }
+            }
             img{                
                 height: 80px;
                 display: block;                
@@ -17,5 +26,24 @@ ion-content{
                 }
             }
         }
+        .menu_div{
+            
+            ion-card{
+                text-align: center;
+                color: turquoise;
+                ion-icon{
+                    zoom: 3.5;
+                    padding-top:  5px;
+                }
+                h3{
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-top: 0px;
+                }
+            }
+            
+
+        }
     }
+    
 }
