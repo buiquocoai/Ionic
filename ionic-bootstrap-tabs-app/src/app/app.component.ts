@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';  
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,47 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  navigate: any;  
+  constructor(private platform: Platform,  
+  ) {
+    this.sideMenu();  
+    // this.initializeApp();  
+    }
+
+    initializeApp() {  
+      this.platform.ready().then(() => {  
+        // this.statusBar.styleDefault();   
+        // this.splashScreen.hide();  
+      });  
+    }  
+    sideMenu() {  
+      this.navigate =   
+      [  
+          { 
+          title : 'App',
+          url   : '/apps',
+          icon  : 'apps' 
+          },
+        { 
+          title : 'Book',  
+          url   : '/book',  
+          icon  : 'book'  
+        },   
+        {  
+          title : 'Paint',  
+          url   : '/paint',  
+          icon  : 'brush'   
+        },  
+        {  
+          title : 'Contacts',  
+          url   : '/contacts',  
+          icon  : 'contacts'  
+        },   
+        {
+            title : 'Facebook',
+            url   : '/facebook.com',
+            icon  : 'logo-facebook'
+        },
+      ];  
+    }  
 }
