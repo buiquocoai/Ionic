@@ -7,7 +7,10 @@ import { Platform } from '@ionic/angular';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  navigate: any;  
+  navigate: any; 
+  appPages: any; 
+  selectedIndex: any;
+  labels: any;
   constructor(private platform: Platform,  
   ) {
     this.sideMenu();  
