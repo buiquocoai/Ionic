@@ -8,17 +8,48 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
+  // {
+  //   path: 'home1',
+  //   loadChildren: () => import('./home1/home1.module').then( m => m.Home1PageModule)
+  // },
+  // {
+  //   path: 'sidemenu',
+  //   loadChildren: () => import('./sidemenu/sidemenu.module').then( m => m.SidemenuPageModule)
+  // },
+  // {
+  //   path: 'profile',
+  //   loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  // },
+  // {
+  //   path: 'dashboard',
+  //   loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  // },
+  // {
+  //   path: 'settings',
+  //   loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  // },
   {
-    path: 'home1',
-    loadChildren: () => import('./home1/home1.module').then( m => m.Home1PageModule)
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
   {
-    path: 'sidemenu',
-    loadChildren: () => import('./sidemenu/sidemenu.module').then( m => m.SidemenuPageModule)
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+
+  // {
+  //   path: 'notifications',
+  //   loadChildren: () => import('./notifications/notifications.module').then( m => m.NotificationsPageModule)
+  // },
+
+
  
 
 
